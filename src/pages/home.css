@@ -1,0 +1,217 @@
+.home{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: blue;
+    overflow: hidden;
+  
+   
+
+}
+
+.users{
+    width: 100vw;
+    min-height: 100vh;
+    
+    /* margin-left: 10vw; */
+    /* display: grid;
+    grid-template-columns: repeat(4 , 25vw);
+        grid-gap: 20px;
+        border: 2px solid black */
+        display: grid;
+  grid-template-columns: repeat(4 , .5fr); 
+  grid-auto-flow: row;
+  grid-gap: 20px; 
+  width: 100vw; 
+  padding: 1vw;
+  
+}
+
+.userHead {
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+.userHead h2{
+    background-color: white;
+    color: black;
+    padding: 3vh;
+    border-radius: 20%;
+}
+
+.users button{
+    margin: auto;
+}
+
+.user {
+    border-radius: 10%;
+    max-width: 20vw;
+    max-height: 60vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1vh;
+    
+}
+
+.filters{
+    margin: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters div {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2.5vw;
+}
+.filters div select{
+    cursor: pointer;
+}
+.load{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+
+@media screen and (max-width: 1300px){
+
+/* filter */
+
+.filters div {
+    margin-right: 3vw;
+    width: 45%;
+     
+
+}
+
+    /* user */
+
+    .users{
+        grid-template-columns: repeat(4 , .3fr); 
+        grid-gap: 10px; 
+    }
+.user{
+    max-width: 19vw;
+    
+}
+.user h4{
+    font-size: .7rem;
+}
+.user h2{
+    font-size: 1.2rem;
+}
+.btn{
+    font-size: .7rem;
+}
+}
+
+@media screen and (max-width: 990px){
+
+    .users{
+        width: 100vw;
+        min-height: 100vh;
+        
+        /* margin-left: 10vw; */
+        /* display: grid;
+        grid-template-columns: repeat(4 , 25vw);
+            grid-gap: 20px;
+            border: 2px solid black */
+            display: grid;
+      grid-template-columns: repeat(2 , 3fr); 
+      grid-auto-flow: row;
+      grid-gap: 20px; 
+      width: 100vw; 
+      padding: 1vw;
+      margin-left: 1vw;
+      
+    }
+
+    .user{
+        max-width: 40vw;
+    }
+    }
+
+
+    
+@media screen and (max-width: 700px){
+
+.userHead h2{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+    .filters div {
+        width: 80%;
+        margin-right: 10vw;
+    }
+
+    .users {
+        grid-template-columns: repeat(2 , .5fr);
+        grid-gap : 10px;
+    }
+    .user {
+        margin-left: -1vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+
+    .filters div {
+        width: 100%;
+        padding: 2rem;
+        margin-right: 17vw;
+    }
+    .filters div select {
+        font-size: .7rem;
+    }
+
+    .user h4 {
+        font-size: .5rem;
+    }
+    .user h2{
+        font-size: .7rem;
+    }
+    .btn{
+        font-size: .5rem;
+        padding: .5rem;
+    }
+    .users{
+        grid-template-columns: repeat(2 , .45fr); 
+        margin-left: 3vw;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+
+
+    .userHead h2{
+        font-size: .8rem;
+    }
+    .filters div {
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 35vw;
+
+    }
+    .filters div select {
+        font-size: .5rem;
+        margin-left: 5vw;
+    }
+
+}

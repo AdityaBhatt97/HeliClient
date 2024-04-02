@@ -1,0 +1,107 @@
+.userList {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: .8rem;
+    
+}
+.userList button{
+    margin-top: 4vh;
+}
+.userListHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.userTeam{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.usersCart {
+    width: 15vw;
+    min-height: 40vh;
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .2rem;
+    position: relative;
+}
+.usersCart span {
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    cursor: pointer;
+    color: red;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 1350px){
+
+    .usersCart h2{
+   font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 1350px){
+
+    .usersCart {
+        min-height: 30vh;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+
+    .userList{
+        padding: 0;
+    }
+
+    .usersCart h2{
+        font-size: .7rem;
+         }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .userList{
+        min-height: 40vh;
+        margin-bottom: 4vh;
+        
+    }
+
+    .usersCart {
+        min-height: 15vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .userTeam {
+        display: grid;
+        grid-template-columns: repeat(3 , .5fr); 
+        grid-auto-flow: row;
+        grid-gap: 20px; 
+    }
+    .usersCart {
+        width: 25vw;
+    }
+
+}

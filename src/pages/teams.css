@@ -1,0 +1,87 @@
+
+.teams{
+    background-color: blue;
+    width: 100vw;
+    min-height: 100vh;
+}
+.teamsHead{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.teamsFull{
+    display: flex;
+    width: 95vw;
+    min-height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 10%;
+    margin-top: 2vh;
+}
+.allTeams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 110vh;
+    width: 100vw;
+    margin-top: 5vh;
+}
+.team{
+    background-color: white;
+    min-width: 15vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 1750px){
+
+    .team h3{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1300px){
+
+
+    .teamsFull{
+        width: 100%;
+    }
+    .team{
+        min-width: 18vw;
+    }
+    .team h3{
+        font-size: .8rem;
+    }
+
+  
+
+}
+
+@media screen and (max-width: 950px){
+
+.teamsFull{
+    min-height: 50vh;
+    display: grid;
+        grid-template-columns: repeat(2 , .5fr); 
+        grid-auto-flow: row;
+        grid-gap: 20px; 
+        padding: 1rem;
+    }
+    .team{
+     height: 25vh;
+    }
+    .team h3{
+        font-size: .7rem;
+    }
+   
+
+    }
